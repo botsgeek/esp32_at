@@ -1,3 +1,5 @@
+# ESP32 AT Firmware Mirror
+
 # ESP-AT
 [![Documentation Version](./docs/_static/at_doc_latest.svg)](https://docs.espressif.com/projects/esp-at/en/latest/)
 
@@ -65,6 +67,15 @@ The AT command firmware allows for rapid integration by providing:
 - Other Series
   - ESP-AT will support ESP32-C5 series of chips.
   - ESP-AT will not support ESP32-S and ESP32-H series of chips.
+
+  ## How to use
+
+Run commands from powershell if using windows
+
+- From project root directory run ` python build.py menuconfig ` to configure the Serial interface for AT command
+- From project root directory run `python3 build.py build` to build the project
+- Connect your esp32 dev
+- then run `python3 idf.py -p <COM port> flash` to flash 
 
 # ESP-AT 项目
 esp-at 作为由 Espressif Systems (@[espressif](https://github.com/espressif/)) 发起和提供技术支持的官方项目，适用于 Windows、Linux、macOS 上的 **ESP32-C2**、**ESP32-C3**、**ESP32-C6**、**ESP32**、**ESP8266**、和 **ESP32-S2** 系列芯片。  
